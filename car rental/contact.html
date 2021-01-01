@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Car Rental</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">Car<span class="logo_colour">Rental</span></a></h1>
+          <h2>Simple Website for car rentals.</h2>
+        </div>
+      </div>
+	  
+	  
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li ><a href="index.html">Home</a></li>
+          <li><a href="cars.html">Our Cars</a></li>
+          <li><a href="rent.html">Rent a car</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li class="selected"><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+	
+    <div id="site_content">
+   
+      <div id="content">
+        <!-- insert the page content here -->
+       
+<form action="cont.php" method="post">
+          <div class="form_settings">
+            <p><span>Name</span><input class="contact" type="text" name="your_name" value="" /></p>
+            <p><span>Email Address</span><input class="contact" type="text" name="your_email" value="" /></p>
+            <p><span>Message</span><textarea class="contact textarea" rows="8" cols="50" name="your_enquiry"></textarea></p>
+            <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="submit" value="submit" /></p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="footer">
+      Copyright &copy; Pritam
+	  
+    </div>
+  </div>
+</body>
+</html>

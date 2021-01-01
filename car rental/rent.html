@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Car Rental</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">Car<span class="logo_colour">Rental</span></a></h1>
+          <h2>Simple Website for car rentals.</h2>
+        </div>
+      </div>
+	  
+	  
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li ><a href="index.html">Home</a></li>
+          <li><a href="cars.html">Our Cars</a></li>
+          <li class="selected"><a href="rent.html">Rent a car</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+	
+    <div id="site_content">
+   
+      <div id="content">
+        <!-- insert the page content here -->
+       
+
+
+
+ <h1>Welcome to the CarRental.com</h1>
+ 
+ 
+       <h2>Rent a Car</h2>
+        <form action="reg.php" method="post">
+          <div class="form_settings">
+		  
+		    <p><span>Name</span><input  type="text" name="name" value="" /></p>
+			
+			<p><span>Contact</span><input  type="text" name="contact" maxlength="10" value="" /></p>
+			
+			<p><span>Email</span><input  type="email" name="email" value="" /></p>
+			
+			<p><span>Address</span><input  type="textarea" name="address" value="" /></p>
+			
+			
+		  
+            <p><span>Choose Car</span><select name="car">
+			<option>Renault Kwid</option>
+			<option>MS Alto</option>
+			<option>Honda Amaze</option>
+			<option>Honda City</option>
+			<option>Honda Jazz</option>
+			<option>Tata Nexon</option>
+			<option>Tata Tiago</option>
+			<option>Tata Safari</option>
+			</select></p>
+			
+			<p><span>Pickup Point</span><select name="pickup">
+			<option>Baba Bus Stand</option>
+			<option>Cidco Bus Stand</option>
+			<option>J tower</option>
+			<option>Gajanan Mandir</option>
+			<option>Shivajinagar</option>
+			</select></p>
+			
+			<p><span>Drop Point</span><select name="droppoint">
+			<option>Baba Bus Stand</option>
+			<option>Cidco Bus Stand</option>
+			<option>J tower</option>
+			<option>Gajanan Mandir</option>
+			<option>Shivajinagar</option>
+			</select></p>
+			
+			<br>
+            <p><span>From Date</span><input  type="date" name="fromdate" value="" /></p>
+			<p><span>To Date</span><input  type="date" name="todate" value="" /></p>
+			<br>
+			
+          <input class="submit" type="submit" name="submit" />
+		 
+          </div>		
+		</form>
+
+    <div id="footer">
+      Copyright &copy; Pritam
+    </div>
+  </div>
+</body>
+</html>
